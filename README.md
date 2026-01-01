@@ -105,7 +105,7 @@ BDDT/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/BDDT.git
+   git clone https://github.com/nabiha02/BDDT.git
    ```
 2. Open the project directory
 3. Configure database settings (if required)
