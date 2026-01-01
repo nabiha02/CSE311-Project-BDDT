@@ -177,15 +177,6 @@ nshots/index.png)
 ![User Profile](screenshots/profile.png)
 ```
 
-### 🔐 Authentication Flow (Login / Signup)
-
-* Secure login and registration system
-* Role-based access control (User / Govt Employee / Admin)
-
-```
-![Login](screenshots/login.png)
-![Signup](screenshots/signup.png)
-```
 
 ### 📊 Dashboard (Role-Based)
 
