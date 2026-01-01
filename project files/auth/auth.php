@@ -143,7 +143,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
             <select name="role" required>
                 <option value="">-----</option>
                 <option value="Citizen">Citizen</option>
-                <option value="Admin">Admin</option>
                 <option value="Govt Employee">Govt Employee</option>
             </select>
 
