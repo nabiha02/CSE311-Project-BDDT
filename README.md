@@ -125,13 +125,20 @@ Developed independently for the 311 Government Project
 
 Below are representative screenshots of the major system modules to help understand the workflow and user experience. These images demonstrate both public-facing and role-based dashboards.
 
+### 🔐 Login / Signup Transition (UI Animation)
+▶️ Short demo showing the smooth sliding transition between login and signup screens.
+
+https://github.com/user-attachments/assets/7084eb3f-baea-4c39-af9f-b82d18b774a7
+
+
 ### 🏠 Index / Home Page
 
 * Displays featured projects, innovations, researches, and milestones
 * Highlights different **sectors** and current project statuses
 
 ```
-![Index Page](screenshots/index.png)
+![Index Page](scree![Uploading notifications.png…]()
+nshots/index.png)
 ```
 
 ### 📋 Project Listing & View Page
