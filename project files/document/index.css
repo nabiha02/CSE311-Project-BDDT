@@ -1,0 +1,23 @@
+body { font-family: Inter, sans-serif; background:#f4f6f8; margin:0; padding:0; }
+.doc-container { max-width:1000px; margin:120px auto 60px; background:#fff; padding:22px; border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,0.06); }
+.doc-container h2 { color:#1d3b77; margin:0 0 6px; }
+.hint { color:#666; margin-bottom:16px; }
+.upload-form label { display:block; margin-top:12px; font-weight:600; }
+.upload-form input[type="text"], .upload-form textarea, .upload-form select, .upload-form input[type="file"] { width:100%; padding:10px; margin-top:6px; border-radius:8px; border:1px solid #dcdfe6; }
+.upload-form button { margin-top:14px; padding:12px 16px; background:#1f3c88; color:#fff; border:none; border-radius:8px; cursor:pointer; }
+.btn-upload { display:inline-block; margin-bottom:12px; background:#22a; color:#fff; padding:8px 12px; border-radius:8px; text-decoration:none; }
+.list { margin-top:16px; display:flex; flex-direction:column; gap:14px; }
+.doc-card { display:flex; justify-content:space-between; gap:12px; padding:14px; border-radius:10px; background:#fbfdff; border:1px solid #eef2ff; align-items:flex-start; }
+.doc-card.pending { border-left:5px solid #f39c12; background:#fff9eb; }
+.doc-card.approved { border-left:5px solid #22c55e; background:#f3fff5; }
+.doc-card.rejected { border-left:5px solid #ef4444; background:#fff5f5; }
+.doc-left { max-width:65%; }
+.doc-left h3 { margin:0 0 6px; }
+.meta { color:#666; font-size:13px; margin-bottom:8px; }
+.descr { color:#444; font-size:14px; }
+.doc-right { text-align:right; min-width:200px; }
+.view { display:inline-block; margin-bottom:8px; padding:8px 10px; background:#1f3c88; color:#fff; border-radius:8px; text-decoration:none; }
+.by, .date, .status { color:#666; font-size:13px; margin:4px 0; }
+.btn-approve { background:#22c55e; color:#fff; padding:6px 8px; border:none; border-radius:6px; cursor:pointer; margin-right:6px; }
+.btn-reject { background:#ef4444; color:#fff; padding:6px 8px; border:none; border-radius:6px; cursor:pointer; }
+.success { color:green; margin-top:10px; }

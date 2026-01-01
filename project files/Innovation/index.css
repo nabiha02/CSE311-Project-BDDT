@@ -1,0 +1,196 @@
+/* ------------------------------
+   GLOBAL
+--------------------------------*/
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --border: #e6e9f0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  font-family: Inter, sans-serif;
+  color: #0f172a;
+}
+
+/* Outer wrapper (only for listing pages) */
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ------------------------------
+   CARD LIST (Index Page)
+--------------------------------*/
+.project-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 30px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+}
+
+.project-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.meta-item {
+  font-size: 14px;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* STATUS BADGE */
+.status-badge {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  padding: 4px 6px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.status-active    { background: #16a34a; }
+.status-on-track  { background: #f59e0b; }
+.status-completed { background: #2563eb; }
+.status-cancelled { background: #dc2626; }
+
+/* GRID (Index Page) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 22px;
+}
+
+.page-content {
+  margin-top: 50px;
+}
+
+
+/* ------------------------------
+   VIEW PAGE — FULL WIDTH + CENTERED
+--------------------------------*/
+
+/* Back button stays LEFT */
+.back {
+  display: inline-block;
+  margin: 6px 6px 6px 6px;
+  font-size: 16px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Title centered */
+.detail-title {
+  margin: 0 0 18px 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Full-width center layout */
+.detail-container {
+  max-width: 1500px;
+  margin: 0 auto;          /* CENTER EVERYTHING */
+  padding: 0 20px;         /* Even spacing on both sides */
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  gap: 25px;
+}
+
+/* Cards inside view */
+.info-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  padding: 30px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  align-items: center;
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.info-icon {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px 25px;
+}
+
+.description-box {
+  background: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #e5eaff;
+  padding: 14px;
+  line-height: 1.6;
+}
+
+/* List items */
+.list-item {
+  background: #f7f9ff;
+  border: 1px solid #e3e7ff;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* ------------------------------
+   NEWS LINKS
+--------------------------------*/
+.info-card .list-item a {
+    color: #2563eb;          /* professional accent color */
+    text-decoration: none;   /* remove underline */
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.info-card .list-item a:hover {
+    color: #1d4ed8;          /* slightly darker on hover */
+    text-decoration: underline; /* optional: underline on hover */
+}
+
+
+/* ------------------------------
+   MOBILE RESPONSIVE
+--------------------------------*/
+@media (max-width: 900px) {
+  .detail-container {
+      grid-template-columns: 1fr;
+  }
+
+  .detail-title {
+    text-align: center;
+  }
+}

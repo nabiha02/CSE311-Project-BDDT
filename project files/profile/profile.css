@@ -1,0 +1,159 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #eef1f7;
+    margin: 0;
+}
+
+.profile-container {
+    display: flex;
+    max-width: 1300px;
+    margin: 120px auto;
+    gap: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 300px;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.avatar h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #333;
+}
+
+.avatar p {
+    font-size: 14px;
+    color: #666;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.menu li {
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.menu li:hover,
+.menu li.active {
+    background: #5583f6;
+    color: white;
+}
+
+/* Profile Details */
+.profile-details {
+    flex: 1;
+}
+
+.profile-details h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.info-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.08);
+}
+
+.info-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #5583f6;
+    margin-bottom: 20px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.info-row label {
+    font-weight: 600;
+    color: #555;
+}
+
+.info-row span {
+    color: #444;
+    text-align: right;
+}
+
+/* ========== EDIT PROFILE FORM ========== */
+#edit-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#edit-section label {
+    font-weight: 600;
+    color: #555;
+}
+
+#edit-section input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#edit-section input:focus {
+    outline: none;
+    border-color: #5583f6;
+    box-shadow: 0 0 5px rgba(85, 131, 246, 0.3);
+}
+
+#edit-section .save-btn {
+    background-color: #5583f6;
+    color: white;
+    font-weight: 600;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#edit-section .save-btn:hover {
+    background-color: #436cd1;
+}
+
+
+/* Mobile */
+@media(max-width: 900px) {
+    .profile-container {
+        flex-direction: column;
+        margin: 30px;
+    }
+    .sidebar {
+        width: 100%;
+    }
+}

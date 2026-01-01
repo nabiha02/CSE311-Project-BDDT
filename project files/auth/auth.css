@@ -1,0 +1,80 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; }
+body { 
+    background: #f6f5f7; display: flex; justify-content: center; align-items: center; height: 100vh; }
+
+/* Main container */
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.06), 0 10px 10px rgba(0,0,0,0.04);
+    position: relative;
+    overflow: hidden;
+    width: 850px;
+    max-width: 100%;
+    min-height: 550px;
+}
+
+
+/* Form containers */
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    padding: 60px 50px; /* increase padding for breathing space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.6s ease-in-out;
+    background: #fff;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.msg {
+    color: #d62828;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+/* Slide effect */
+.container.right-panel-active .sign-in-container { transform: translateX(100%); }
+.container.right-panel-active .sign-up-container { transform: translateX(100%); opacity:1; z-index:5; }
+
+/* Overlay */
+.overlay-container { position:absolute; top:0; left:50%; width:50%; height:100%; overflow:hidden; transition: transform 0.6s ease-in-out; z-index:100; }
+.overlay { background: linear-gradient(to right, #5583f6, #6387e4); color:#ffffff; position:relative; left:-100%; width:200%; height:100%; display:flex; transition: transform 0.6s ease-in-out; }
+.container.right-panel-active .overlay-container { transform: translateX(-100%); }
+.container.right-panel-active .overlay { transform: translateX(50%); }
+
+/* Overlay panels */
+.overlay-panel { display:flex; flex-direction:column; justify-content:center; align-items:center; width:50%; padding:0 40px; text-align:center; }
+.overlay-left { transform: translateX(-20%); }
+.overlay-right { right:0; transform: translateX(0); }
+.container.right-panel-active .overlay-left { transform: translateX(0); }
+.container.right-panel-active .overlay-right { transform: translateX(20%); }
+
+/* Headings */
+h1 { font-weight:bold; font-size:24px; margin-bottom:10px; word-wrap:break-word; color: #000000;word-wrap:break-word; }
+.overlay-panel h1 { font-size:28px; word-wrap:break-word; color: #ffffff;}
+p { font-size:14px; margin-bottom:20px; line-height:1.4; }
+
+/* Inputs & Select */
+input, select { background:#f4f6f8; border:none; padding:12px; margin:8px 0; width:100%; border-radius:25px; font-size:14px; }
+
+/* Buttons */
+button { border-radius:25px; border:none; background: linear-gradient(to right, #1f3c88, #162b6b); color:#fff; font-weight:bold; padding:8px; cursor:pointer; transition: all 0.3s; }
+button.ghost { background:transparent; border:2px solid #fff; }
+button:hover { transform: scale(1.05); }
+.msg { color:#d62828; font-size:13px; margin-bottom:10px; }
+/* Responsive */
+@media (max-width:768px){ .container{ width:100%; min-height:600px; } .form-container, .overlay-container { width:100%; } .overlay{ display:none; } }
+
+
+/* ===============================
+   AUTH PAGE — DARK MODE
+   (header-controlled)
+=============================== */
+

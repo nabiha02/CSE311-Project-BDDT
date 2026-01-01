@@ -1,0 +1,215 @@
+/* Adjust according to your header height */
+body {
+    padding-top: 100px; /* e.g., if header height is 80px */
+}
+
+.search-header {
+    text-align: center; /* center the text */
+    margin: 30px 0 20px; /* top and bottom spacing */
+    font-family: 'Inter', sans-serif; /* optional nice font */
+    color: #041445; /* match your links / theme */
+}
+
+.search-header h2 {
+    font-size: 24px; /* slightly larger */
+    font-weight: 600;
+    margin: 0;
+    color: #3e4873;
+}
+
+
+/* ---------------- Search Results List ---------------- */
+
+
+
+/* ---------------- Live Search Dropdown ---------------- */
+.search-form {
+    position: relative; /* makes dropdown position relative to input */
+}
+
+
+/* ---------- Container for each type ---------- */
+
+/* ---------- Results List ---------- */
+.search-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-results li {
+    padding: 12px 10px;
+    border-bottom: 1px solid #e5e7eb;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.search-results li:last-child {
+    border-bottom: none; /* no border on last item */
+}
+
+/* Hover effect for each item */
+.search-results li:hover {
+    background: #f0f9ff;
+    transform: translateX(3px);
+}
+
+/* Links inside each item */
+.search-results li a {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: 600;
+    display: block;
+    font-size: 16px;
+}
+
+/* Optional description */
+.search-results li p {
+    margin: 4px 0 0;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+/* Live search dropdown */
+.live-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 0 0 12px 12px;
+    z-index: 2000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.live-result {
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.live-result:hover {
+    background: #f0f9ff;
+}
+
+.live-result a {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: 500;
+}
+
+.result-box {
+    background: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto; /* centers the box horizontally */
+    max-width: 800px;  /* limits the width */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.result-box-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #4303ab;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 8px;
+}
+
+.result-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.result-item {
+    padding: 10px 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #f9fafb;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.result-item:hover {
+    background: #f0f9ff;
+    transform: translateX(2px);
+}
+
+.result-item a {
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: 600;
+    display: block;
+}
+
+.result-item p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+
+/* Container for the filters */
+.search-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Inputs & selects */
+.search-filters input[type="text"],
+.search-filters input[type="date"],
+.search-filters select {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+/* Focus effect */
+.search-filters input[type="text"]:focus,
+.search-filters input[type="date"]:focus,
+.search-filters select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 3px rgba(0,123,255,0.5);
+}
+
+/* Button styling */
+.search-filters button {
+    padding: 9px 18px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search-filters button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+    .search-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .search-filters input,
+    .search-filters select,
+    .search-filters button {
+        width: 100%;
+    }
+}

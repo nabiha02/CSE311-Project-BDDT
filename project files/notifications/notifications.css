@@ -1,0 +1,65 @@
+/* Page Title */
+.ntitle {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 120px auto 40px;
+    text-align: center;
+    color: #1d3b77;
+}
+
+/* Container for all notifications */
+.notification-list {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+/* Each notification card */
+.notif-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    border-left: 5px solid #1d3b77;
+    transition: 0.2s ease;
+}
+
+/* Highlight unread notifications */
+.notif-card.unread {
+    border-left-color: #004aad;
+    background: #f1f6ff;
+}
+
+/* Hover effect */
+.notif-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Notification Message */
+.notif-card .message {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Timestamp */
+.notif-card .time {
+    font-size: 13px;
+    color: #666;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    color: #666;
+    font-size: 16px;
+}

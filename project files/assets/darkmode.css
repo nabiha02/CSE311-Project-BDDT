@@ -1,0 +1,1041 @@
+
+/* ============================================================
+   UNIVERSAL DARK MODE THEME  
+   Clean • Minimal • Works on All Pages  
+============================================================ */
+
+/* ------------------------------
+   COLOR VARIABLES
+------------------------------ */
+:root {
+    --light-bg: #eef2f7;
+    --light-text: #222;
+    --light-card: #ffffff;
+
+    --dark-bg: #0f1117;
+    --dark-bg-alt: #161920;
+    --dark-card: #1c1f27;
+    --dark-card-hover: #232730;
+    --dark-text: #e5e5e5;
+    --dark-text-muted: #a8a8a8;
+    --dark-border: #2a2d34;
+
+    --primary: #4a70ff;
+    --primary-hover: #5a7aff;
+}
+
+/* ============================================================
+   GLOBAL DARK MODE
+============================================================ */
+body.dark-mode {
+    background: var(--dark-bg) !important;
+    color: var(--dark-text) !important;
+}
+
+/* Remove gradients */
+body.dark-mode,
+body.dark-mode *:not(.keep-light) {
+    background-image: none !important;
+}
+
+/* Make ALL lists / cards dark */
+body.dark-mode .latest-card,
+body.dark-mode .latest-item,
+body.dark-mode .update-card,
+body.dark-mode .project-item,
+body.dark-mode .research-item,
+body.dark-mode .innovation-item,
+body.dark-mode .milestone-item,
+body.dark-mode .news-item {
+    background: var(--dark-card) !important;
+    color: var(--dark-text) !important;
+    border: 1px solid var(--dark-border) !important;
+}
+
+/* ============================================================
+   TEXT STYLES
+============================================================ */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode li,
+body.dark-mode label {
+    color: var(--dark-text) !important;
+}
+
+body.dark-mode small,
+body.dark-mode .text-muted {
+    color: var(--dark-text-muted) !important;
+}
+
+/* ============================================================
+   NAVBAR
+============================================================ */
+body.dark-mode .navbar {
+    background: rgba(16, 18, 24, 0.92) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--dark-border);
+}
+
+body.dark-mode .footer {
+    margin-top: 80px;
+    text-align: center;
+    padding: 22px;
+    background: rgba(19, 21, 32, 0.92) !important;
+    font-size: 14px;
+    color: #c83030;
+}
+body.dark-mode .nav-links li a {
+    color: var(--dark-text) !important;
+}
+
+body.dark-mode .dropdown-content,
+body.dark-mode .profile-dropdown-content {
+    background: var(--dark-card) !important;
+    border: 1px solid var(--dark-border) !important;
+}
+
+body.dark-mode .dropdown-content a,
+body.dark-mode .profile-dropdown-content a {
+    color: var(--dark-text) !important;
+}
+
+body.dark-mode .dropdown-content a:hover,
+body.dark-mode .profile-dropdown-content a:hover {
+    background: var(--dark-card-hover) !important;
+}
+
+/* ============================================================
+   CARDS / BOXES (Dashboard, Projects, etc.)
+============================================================ */
+body.dark-mode .card,
+body.dark-mode .latest-card,
+body.dark-mode .content-box,
+body.dark-mode .stats-box,
+body.dark-mode .project-card,
+body.dark-mode .news-card,
+body.dark-mode .milestone-card,
+body.dark-mode .research-card,
+body.dark-mode .info-card {
+    background: var(--dark-card) !important;
+    border: 1px solid var(--dark-border) !important;
+    color: var(--dark-text) !important;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4) !important;
+}
+
+body.dark-mode .card:hover,
+body.dark-mode .project-card:hover,
+body.dark-mode .news-card:hover {
+    background: var(--dark-card-hover) !important;
+}
+
+/* ------------------------------------------------------------
+   Dashboard → COUNT CARDS (Project, Research, News total cards)
+------------------------------------------------------------ */
+body.dark-mode .card span,
+body.dark-mode .card h2 {
+    color: var(--dark-text) !important;
+}
+
+/* ============================================================
+   INPUTS / FORMS
+============================================================ */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background: var(--dark-bg-alt) !important;
+    color: var(--dark-text) !important;
+    border: 1px solid var(--dark-border) !important;
+}
+
+body.dark-mode input:focus,
+body.dark-mode select:focus,
+body.dark-mode textarea:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 5px rgba(74,112,255,0.4) !important;
+}
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+body.dark-mode .btn,
+body.dark-mode button {
+    background: #2f3542 !important;
+    border: 1px solid #3a3f4b !important;
+    color: var(--dark-text) !important;
+}
+
+body.dark-mode .btn:hover,
+body.dark-mode button:hover {
+    background: #3d4352 !important;
+}
+
+/* Primary buttons */
+body.dark-mode .btn-primary {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: #fff !important;
+}
+
+body.dark-mode .btn-primary:hover {
+    background: var(--primary-hover) !important;
+}
+
+/* ============================================================
+   TABLES
+============================================================ */
+body.dark-mode table {
+    background: var(--dark-card) !important;
+    border-color: var(--dark-border) !important;
+}
+
+body.dark-mode th,
+body.dark-mode td {
+    color: var(--dark-text) !important;
+    border-color: var(--dark-border) !important;
+}
+
+/* ============================================================
+   SEARCH BAR
+============================================================ */
+body.dark-mode .search-bar {
+    background: var(--dark-bg-alt) !important;
+    border: 1px solid var(--dark-border) !important;
+}
+
+body.dark-mode .search-bar input {
+    color: var(--dark-text) !important;
+}
+
+body.dark-mode .search-form button {
+    background: var(--primary) !important;
+}
+
+/* ============================================================
+   LATEST UPDATES — TITLES (Projects, Research, News, etc.)
+============================================================ */
+body.dark-mode .latest-section h2,
+body.dark-mode .latest-section h3 {
+    color: #ffffff !important;
+}
+
+/* Latest card title + date */
+body.dark-mode .latest-card-title {
+    color: #c1c0c0 !important;
+}
+
+body.dark-mode .latest-date {
+    color: #aca8a8 !important;
+}
+
+body.dark-mode .latest-icon i {
+    color: #f0f0f0 !important;
+}
+
+/* ============================================================
+   LEFT ACCENT COLORS (VERY IMPORTANT)
+============================================================ */
+body.dark-mode .latest-type-projects {
+    border-left: 6px solid #4d7cff !important;
+}
+body.dark-mode .latest-type-research {
+    border-left: 6px solid #4ddf7a !important;
+}
+body.dark-mode .latest-type-innovations {
+    border-left: 6px solid #ffb057 !important;
+}
+body.dark-mode .latest-type-milestones {
+    border-left: 6px solid #b58aff !important;
+}
+body.dark-mode .latest-type-news {
+    border-left: 6px solid #ff6b6b !important;
+}
+
+/* ============================================================
+   HOVER COLORS (Keep accent colors)
+============================================================ */
+body.dark-mode .latest-type-projects:hover .latest-card-title { color: #4d7cff !important; }
+body.dark-mode .latest-type-research:hover .latest-card-title { color: #4ddf7a !important; }
+body.dark-mode .latest-type-innovations:hover .latest-card-title { color: #ffb057 !important; }
+body.dark-mode .latest-type-milestones:hover .latest-card-title { color: #b58aff !important; }
+body.dark-mode .latest-type-news:hover .latest-card-title { color: #ff6b6b !important; }
+
+body.dark-mode .latest-card:hover .latest-date {
+    color: #e6e6e6 !important;
+}
+
+body.dark-mode .latest-card:hover .latest-icon i {
+    color: #ffffff !important;
+}
+
+/* ============================================================
+   FIX CONTAINERS
+============================================================ */
+body.dark-mode .latest-section,
+body.dark-mode .latest-wrapper,
+body.dark-mode .content-box,
+body.dark-mode .updates-container {
+    background: var(--dark-card) !important;
+    border: 1px solid var(--dark-border) !important;
+}
+
+/* ============================================================
+   PAGE WRAPPERS
+============================================================ */
+body.dark-mode section,
+body.dark-mode .section,
+body.dark-mode .dashboard-section,
+body.dark-mode .content-wrapper,
+body.dark-mode .container,
+body.dark-mode .wrapper,
+body.dark-mode .main {
+    background: var(--dark-bg) !important;
+}
+
+/* ==========================================================
+   Restore accent icon badges + dashboard header in dark mode
+   ========================================================== */
+
+/* Make the small icon circles visible and colorful again */
+body.dark-mode .card .icon,
+body.dark-mode a.card .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    color: #fff !important;                /* glyph color */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+    flex-shrink: 0;
+}
+
+/* Keep the original accent gradients per card type (use !important so dark-mode overrides don't kill them) */
+body.dark-mode .card.card-blue .icon { 
+    background: linear-gradient(145deg, #1f3c88, #3b61c1) !important;
+}
+body.dark-mode .card.card-green .icon {
+    background: linear-gradient(145deg, #2da44e, #57c077) !important;
+}
+body.dark-mode .card.card-orange .icon {
+    background: linear-gradient(145deg, #ff8c1a, #ffa84d) !important;
+}
+body.dark-mode .card.card-purple .icon {
+    background: linear-gradient(145deg, #7c3aed, #a56dfc) !important;
+}
+body.dark-mode .card.card-red .icon {
+    background: linear-gradient(145deg, #dc2626, #f04c4c) !important;
+}
+
+/* Slightly lift icons so they read on very dark backgrounds */
+body.dark-mode .card .icon {
+    transform: translateY(-1px);
+}
+
+/* If you have icon backgrounds on other card variants */
+body.dark-mode .latest-card .latest-icon,
+body.dark-mode .project-card .icon,
+body.dark-mode .news-card .icon {
+    color: #fff !important;
+}
+
+/* Optional: a subtle border to separate the icon from the dark card */
+body.dark-mode .card .icon {
+    border: 1px solid rgba(255,255,255,0.03) !important;
+}
+
+/* Restore the big dashboard heading color (so "Bangladesh Development Tracker" remains blue) */
+body.dark-mode .dashboard-header h1 {
+    color: var(--primary) !important;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+/* Make sure the small "Total X" labels on cards remain visible and slightly muted */
+body.dark-mode .card span {
+    color: #d6d6d6 !important;
+}
+
+/* ================================
+   DARK MODE FIX FOR PROJECT PAGE
+================================== */
+
+html.dark body {
+    background: #0d1117 !important;
+    color: #e6e6e6 !important;
+}
+
+/* All main cards / boxes */
+html.dark .bg-white,
+html.dark .card,
+html.dark .project-card,
+html.dark .rounded-lg,
+html.dark .shadow-sm {
+    background: #161b22 !important;
+    color: #e6e6e6 !important;
+}
+
+/* Titles */
+html.dark h1, 
+html.dark h2, 
+html.dark h3, 
+html.dark h4,
+html.dark .title {
+    color: #ffffff !important;
+}
+
+/* Labels */
+html.dark .text-gray-600,
+html.dark .text-gray-500 {
+    color: #c7c7c7 !important;
+}
+
+/* Description box */
+html.dark .description-box {
+    background: #1f242d !important;
+    color: #e6e6e6 !important;
+}
+
+/* Icons */
+html.dark svg {
+    color: #e6e6e6 !important;
+    fill: #e6e6e6 !important;
+}
+
+/* Borders */
+html.dark * {
+    border-color: #30363d !important;
+}
+
+/* Force all inner info cards to dark in dark mode */
+.dark-mode .card,
+.dark-mode .section-card,
+.dark-mode .info-card,
+.dark-mode .project-section,
+.dark-mode .details-box {
+    background-color: #1e1e1e !important;
+    color: #e5e5e5 !important;
+    border-color: #333 !important;
+}
+
+/* Make text readable */
+.dark-mode p,
+.dark-mode span,
+.dark-mode li,
+.dark-mode .text-muted {
+    color: #dcdcdc !important;
+}
+
+/* --------------------------
+   DARK MODE STYLING
+--------------------------- */
+.dark-mode body {
+    background: #0f0f11;
+    color: #e6e6e6;
+}
+
+/* Main cards */
+.dark-mode .info-card {
+    background: #1a1b1e;
+    border: 1px solid #2a2b2f;
+    color: #e6e6e6;
+}
+
+/* Headers */
+.dark-mode .info-header h2 {
+    color: #ffffff;
+}
+
+.dark-mode .info-icon {
+    color: #f1c232; /* gold-ish icon color */
+}
+
+/* Grid text */
+.dark-mode .info-grid div {
+    color: #dcdcdc;
+}
+
+/* Description text */
+.dark-mode .description-box {
+    background: #2a2b2f;
+    border: 1px solid #3a3b40;
+    color: #e6e6e6;
+}
+
+/* List items (investors, locations) */
+.dark-mode .list-item {
+    background: #2a2b2f;
+    border: 1px solid #3a3b40;
+    color: #e6e6e6;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+/* Muted text */
+.dark-mode .muted {
+    color: #bbbbbb !important;
+}
+
+/* Hover effect */
+.dark-mode .list-item:hover,
+.dark-mode .description-box:hover,
+.dark-mode .info-card:hover {
+    background: #33343a;
+    border-color: #4a4b52;
+}
+
+/* Links */
+body.dark-mode .back {
+    color: #8fb4ff !important;
+}
+
+body.dark-mode .back:hover {
+    color: #c9d8ff !important;
+}
+
+
+/* Sector page — fix list items */
+/* ============================
+   SECTOR PAGE – DARK MODE FIX
+============================ */
+/* ==========================================================
+   SECTOR PAGE — DARK MODE FIX
+   Matching EXACT class names from sector/index.php
+========================================================== */
+
+/* Whole section card */
+body.dark-mode .section-block {
+    background: #1e1f25 !important;
+    border: 1px solid #2c3038 !important;
+    color: #e5e7eb !important;
+}
+
+/* Headers inside each section */
+body.dark-mode .section-title,
+body.dark-mode .section-header {
+    color: #7dd3fc !important;
+}
+
+/* Count badge on the right */
+body.dark-mode .count-badge {
+    background: #2c3038 !important;
+    color: #f8f8f8 !important;
+}
+
+/* Each list row */
+body.dark-mode .item-link {
+    color: #d1d5db !important;
+    border-bottom: 1px solid #2c3038 !important;
+    background: transparent !important;
+}
+
+/* Hover effect */
+body.dark-mode .item-link:hover {
+    background: #2c3038 !important;
+    color: #ffffff !important;
+}
+
+/* Chevron (›) */
+body.dark-mode .item-chevron {
+    color: #d1d5db !important;
+}
+
+/* "No data available" text */
+body.dark-mode .muted {
+    color: #9ca3af !important;
+}
+/* ============================================================
+   DOCUMENT VIEW PAGE — DARK MODE FIX
+   (document/view.php)
+============================================================ */
+
+/* Main container */
+/* ============================================================
+   DOCUMENT VIEW PAGE — DARK MODE FIX
+   (document/view.php)
+============================================================ */
+
+/* ============================================================
+   DOCUMENT PAGE — DARK MODE FIX
+   Matches exactly: .doc-card, .view, .btn-upload, etc.
+============================================================ */
+
+/* Main container */
+body.dark-mode .doc-container {
+    background: var(--dark-bg) !important;
+    color: var(--dark-text) !important;
+}
+
+/* Page title */
+body.dark-mode .doc-container h2 {
+    color: #ffffff !important;
+}
+
+/* Upload button */
+body.dark-mode .btn-upload {
+    background: var(--primary) !important;
+    color: #fff !important;
+    border: 1px solid var(--primary) !important;
+}
+
+body.dark-mode .btn-upload:hover {
+    background: var(--primary-hover) !important;
+}
+
+/* Each document card */
+body.dark-mode .doc-card {
+    background: var(--dark-card) !important;
+    border: 1px solid var(--dark-border) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4) !important;
+    color: var(--dark-text) !important;
+}
+
+/* Left and right text */
+body.dark-mode .doc-left h3,
+body.dark-mode .doc-left p,
+body.dark-mode .doc-right p {
+    color: var(--dark-text) !important;
+}
+
+/* Meta + description muted text */
+body.dark-mode .meta,
+body.dark-mode .descr,
+body.dark-mode .by,
+body.dark-mode .date {
+    color: var(--dark-text-muted) !important;
+}
+
+/* Status text */
+body.dark-mode .status {
+    font-weight: bold;
+}
+
+/* Status colors */
+body.dark-mode .doc-card.approved {
+    border-left: 6px solid #22c55e !important;
+    background: rgba(22, 158, 72, 0.12) !important;
+}
+
+body.dark-mode .doc-card.rejected {
+    border-left: 6px solid #ef4444 !important;
+    background: rgba(239, 40, 40, 0.179) !important;
+}
+
+body.dark-mode .doc-card.pending {
+    border-left: 6px solid #eab308 !important;
+    background: rgba(234, 178, 8, 0.085) !important;
+}
+
+/* View / Download button */
+body.dark-mode .view {
+    background: var(--primary) !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+    padding: 6px 12px !important;
+}
+
+body.dark-mode .view:hover {
+    background: var(--primary-hover) !important;
+}
+
+/* Admin Approve / Reject buttons */
+body.dark-mode .btn-approve {
+    background: #22c55e !important;
+    color: #fff !important;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+body.dark-mode .btn-approve:hover {
+    background: #16a34a !important;
+}
+
+body.dark-mode .btn-reject {
+    background: #ef4444 !important;
+    color: #fff !important;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+body.dark-mode .btn-reject:hover {
+    background: #dc2626 !important;
+}
+
+/* Success message */
+body.dark-mode .success {
+    color: #4ade80 !important;
+}
+
+
+/* ============================================================
+   PREMIUM DAY / NIGHT TOGGLE (HEADER)
+============================================================ */
+
+/* ========================================
+   DARK MODE TOGGLE – SUN / MOON ANIMATION
+======================================== */
+
+/* ========================================
+   DARK MODE TOGGLE – SMALLER SUN/MOON
+======================================== */
+
+/* ========================================
+   DARK MODE TOGGLE – NAVBAR ALIGNED
+======================================== */
+
+/* Wrapper */
+.toggleWrapper {
+    position: relative;
+    display: inline-block;
+    z-index: 9999;
+    width: 50px;      
+    height: 26px;     
+    vertical-align: middle; /* align with navbar links */
+}
+
+/* Hide the checkbox */
+.toggleWrapper input {
+    position: absolute;
+    left: -9999px;
+}
+
+/* Toggle body (pill shape) */
+.toggle {
+    cursor: pointer;
+    width: 50px;       
+    height: 26px;      
+    background: #83D8FF;
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    vertical-align: middle;
+}
+
+/* Hover glow */
+.toggle:hover {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* Remove labels */
+.toggle::before,
+.toggle::after {
+    content: "";
+}
+
+/* Sun / Moon handler */
+.toggle__handler {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;      
+    height: 20px;     
+    background: #FFCF96;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,.35);
+    transition: all 0.45s cubic-bezier(.68,-0.55,.265,1.55);
+    transform: rotate(-45deg);
+}
+
+/* Moon craters */
+.crater {
+    position: absolute;
+    background: #E8CDA5;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.crater--1 { top: 8px; left: 5px; width: 2px; height: 2px; }
+.crater--2 { top: 13px; left: 10px; width: 3px; height: 3px; }
+.crater--3 { top: 5px; left: 12px; width: 4px; height: 4px; }
+
+/* Stars */
+.star {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.star--1 { top: 5px; left: 18px; width: 12px; height: 1.5px; }
+.star--2 { top: 9px; left: 15px; width: 11px; height: 1.5px; }
+.star--3 { top: 13px; left: 21px; width: 10px; height: 1.5px; }
+
+.star--4, .star--5, .star--6 { opacity: 0; }
+.star--4 { top: 7px; left: 6px; width: 1px; height: 1px; }
+.star--5 { top: 15px; left: 9px; width: 1.5px; height: 1.5px; }
+.star--6 { top: 17px; left: 14px; width: 1px; height: 1px; }
+
+/* DARK MODE STATE */
+#darkModeToggle:checked + .toggle {
+    background: #749DD6;
+}
+
+#darkModeToggle:checked + .toggle .toggle__handler {
+    transform: translateX(24px) rotate(0);
+    background: #FFE5B5;
+}
+
+#darkModeToggle:checked + .toggle .crater {
+    opacity: 1;
+}
+
+#darkModeToggle:checked + .toggle .star--1,
+#darkModeToggle:checked + .toggle .star--2,
+#darkModeToggle:checked + .toggle .star--3 {
+    width: 1px;
+    height: 1px;
+}
+
+#darkModeToggle:checked + .toggle .star--4,
+#darkModeToggle:checked + .toggle .star--5,
+#darkModeToggle:checked + .toggle .star--6 {
+    opacity: 1;
+}
+
+/* =====================================
+   SEARCH SECTION – DARK MODE
+===================================== */
+
+/* =====================================
+   SEARCH – DARK MODE
+===================================== */
+
+/* Search header */
+body.dark-mode .search-header {
+    color: #e0e7ff ;
+}
+
+/* Main result container */
+body.dark-mode .result-box {
+    background: #0f172a;
+    border: 1px solid #1f2937;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+}
+
+/* Result box title */
+body.dark-mode .result-box-title {
+    color: #FDB5CE!important;
+    border-bottom: 2px solid #1f2937;
+}
+
+/* Search results list */
+body.dark-mode .search-results li {
+    border-bottom: 1px solid #1f2937;
+}
+
+body.dark-mode .search-results li:hover {
+    background: #1e293b;
+}
+
+/* Result links */
+body.dark-mode .search-results li a,
+body.dark-mode .result-item a,
+body.dark-mode .live-result a {
+    color: #7dd3fc;
+    transition: color 0.2s ease;
+}
+
+body.dark-mode .search-results li a:hover,
+body.dark-mode .result-item a:hover,
+body.dark-mode .live-result a:hover {
+    color: #bae6fd;
+}
+
+/* Descriptions / secondary text */
+body.dark-mode .search-results li p,
+body.dark-mode .result-item p {
+    color: #9ca3af;
+}
+
+/* Individual result item cards */
+body.dark-mode .result-item {
+    background: #020617;
+    border: 1px solid #1f2937;
+}
+
+body.dark-mode .result-item:hover {
+    background: #1e293b;
+}
+
+/* Live search dropdown */
+body.dark-mode .live-results {
+    background: #0f172a;
+    border: 1px solid #1f2937;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.85);
+}
+
+/* Live search rows */
+body.dark-mode .live-result {
+    color: #e5e7eb;
+}
+
+body.dark-mode .live-result:hover {
+    background: #1e293b;
+}
+
+
+body.dark-mode .search-results li a {
+    color: #7dd3fc !important;
+}
+
+body.dark-mode .search-header h2 {
+
+    color: #3B9797 !important;
+    
+}
+
+body.dark-mode .sidebar{
+
+    background: #1c1f27;
+
+}
+
+body.dark-mode #edit-section .save-btn {
+    background-color: #2b59ce !important;
+    color: white;
+}
+
+body.dark-mode #edit-section .save-btn:hover {
+    background-color: #6286df !important;
+}
+
+
+body.dark-mode .profile-details h2 {
+    color: #3B9797 !important;
+}
+
+
+body.dark-mode .info-card h3 {
+    color:#7dd3fc !important;
+}
+
+body.dark-mode a {
+
+    color: #97a9d8;
+}
+
+body.dark-mode .form-box {
+
+    background: rgba(20, 22, 30, 0.88);
+    
+}
+
+
+body.dark-mode .investor-entry, .location-entry {
+
+    border: none !important
+    ;
+}
+
+body.dark-mode .form-box h2{
+
+    color: #3B9797 !important;
+}
+
+body.dark-mode .remove-investor, .remove-location { 
+    background: rgb(126, 1, 1) !important; }
+
+body.dark-mode .remove-investor:hover, .remove-location:hover { 
+    background: rgb(79, 1, 1) !important; }
+
+body.dark-mode #add-investor, #add-location { background: #014b2d !important; }
+
+body.dark-mode .notif-card {
+    background: #1e1e1e;
+    border-left: 5px solid #4a90ff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    color: #e6e6e6;
+}
+
+/* Unread notifications in dark mode */
+body.dark-mode .notif-card.unread {
+    background: #242f45;
+    border-left-color: #6aa8ff;
+}
+
+/*--------------------------------------------------*/
+
+/* Dark mode for login/signup page */
+/* Dark mode for login/signup page - unified bluish theme */
+
+
+/* Background */
+body.dark-mode {
+    background: #020617;
+}
+
+/* Container */
+body.dark-mode .container {
+    background: #121214 ;
+    box-shadow: 0 14px 28px rgba(174, 174, 174, 0.033), 0 10px 10px rgba(255, 255, 255, 0) !important;
+}
+
+/* FORM SIDE — BLUISH */
+body.dark-mode .form-container {
+    background: linear-gradient(160deg, #0f1f3e, #200020) !important;
+}
+
+/* Inputs */
+body.dark-mode .form-container input,
+body.dark-mode .form-container select {
+    background: #020617;
+    color: #e5e7eb;
+    border: 1px solid #d2d3d6 !important;
+}
+
+body.dark-mode .form-container input::placeholder {
+    color: #94a3b8;
+}
+
+/* Buttons */
+body.dark-mode button {
+    background: linear-gradient(to right, #ea4fff, #c66ad2) !important;
+}
+
+body.dark-mode button.ghost {
+    border: 2px solid #93c5fd;
+    color: #93c5fd;
+}
+
+/* Overlay stays DARK */
+body.dark-mode .overlay {
+    background: linear-gradient(to right, rgba(17, 19, 27, 0.88), rgba(20, 22, 30, 0.88)) !important;
+    ;
+}
+
+body.dark-mode h1,
+body.dark-mode p {
+    color: #e5e7eb;
+}
+
+
+.dark-mode .search-filters {
+   
+    background: rgba(0,0,0,0.6);
+}
+
+.dark-mode .search-filters button {
+
+    background-color: #007BFF !important;
+ 
+}
+
+.dark-mode .search-filters button:hover {
+    background-color: #0056b3 !important;
+}
+
+.dark-mode .feedback-card {
+
+    background: #251d22;
+}
+
+.dark-mode .feedback-actions a.delete { 
+    background: #370101; }
