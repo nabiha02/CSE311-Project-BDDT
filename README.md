@@ -146,9 +146,7 @@ https://github.com/user-attachments/assets/7084eb3f-baea-4c39-af9f-b82d18b774a7
 * Shows description, sector, timeline, and status (Ongoing / Active / Completed / Cancelled)
 
 ```
-![Project View 2](https://raw.githubusercontent.com/nabiha02/CSE311-Project-BDDT/main/screenshots/view_2.png)
-
-
+![Alt text](https://raw.githubusercontent.com/nabiha02/CSE311-Project-BDDT/main/screenshots/view_2.png)
 
 ![image alt](screenshots/view2.png)
 ```
