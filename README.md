@@ -147,7 +147,13 @@ nshots/index.png)
 * Shows description, sector, timeline, and status (Ongoing / Active / Completed / Cancelled)
 
 ```
-![Project View](screenshots/project_view.png)
+<img width="1607" height="872" alt="index" src="https://github.com/user-attachments/assets/2a22860d-6c8b-4b4f-8677-52d6ce234d0c" />
+
+
+<img width="1608" height="876" alt="view1" src="https://github.com/user-attachments/assets/3bb5c527-0e30-4523-bc5b-a264f0c409bc" />
+
+<img width="1617" height="876" alt="view2" src="https://github.com/user-attachments/assets/1100767a-e93a-4264-8e57-cdf915abd180" />
+
 ```
 
 ### 📰 News & Announcements
