@@ -95,8 +95,7 @@ Administrator
 
 ```
 BDDT/
-├── src/                # Source code
-├── assets/             # Images, styles, and static files
+├── profile files/                # Source code
 ├── database/           # SQL files 
 ├── docs/               # Documentation
 ├── README.md           # Project documentation
