@@ -60,12 +60,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_POST['action'] === 'register') {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'nabihachaiti02@gmail.com';
-    $mail->Password = 'loav dbqi wgap tpfq';
+    $mail->Username = '----@gmail.com';
+    $mail->Password = '-------';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
-    $mail->setFrom('nabihachaiti02@gmail.com', 'Bangladesh Development Tracker');
+    $mail->setFrom('----@gmail.com', 'Bangladesh Development Tracker');
     $mail->addAddress($email);
     $mail->isHTML(true);
 
