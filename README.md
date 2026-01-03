@@ -136,23 +136,19 @@ https://github.com/user-attachments/assets/7084eb3f-baea-4c39-af9f-b82d18b774a7
 * Displays featured projects, innovations, researches, and milestones
 * Highlights different **sectors** and current project statuses
 
-```
-
 https://github.com/user-attachments/assets/8591b09d-298e-4ac3-9c43-8b9e6c458c22
 
-
-```
 
 ### 📋 Project Listing & View Page
 
 * Detailed view of individual projects
 * Shows description, sector, timeline, and status (Ongoing / Active / Completed / Cancelled)
 
-```
+
 ![Alt text](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/index.png)
 
 ![image alt](screenshots/view2.png)
-```
+
 
 ### 📰 News & Announcements
 
