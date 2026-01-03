@@ -137,7 +137,9 @@ https://github.com/user-attachments/assets/7084eb3f-baea-4c39-af9f-b82d18b774a7
 * Highlights different **sectors** and current project statuses
 
 ```
-![dashboard](https://raw.githubusercontent.com/nabiha02/CSE311-Project-BDDT/refs/heads/main/screenshots/index.png)
+
+https://github.com/user-attachments/assets/8591b09d-298e-4ac3-9c43-8b9e6c458c22
+
 
 ```
 
