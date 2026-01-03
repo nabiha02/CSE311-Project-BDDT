@@ -157,48 +157,48 @@ https://github.com/user-attachments/assets/8591b09d-298e-4ac3-9c43-8b9e6c458c22
 * Separate section for official news and updates
 * Managed by government employees and admins
 
-![News Page](screenshots/news.png)
-
+1. All news
+![News Page](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/news_index.png)
+2. News View page
+![News Page](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/news_view.png)
 
 ### 🏢 Sector-wise Categorization
 
 * Projects organized by different government sectors
 * Improves accessibility and discoverability
 
-```
-![Sectors](screenshots/sectors.png)
-```
+![Sectors](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/sector_index.png)
 
 ### 👤 User Profile
 
 * Displays user information and activity
 * Shows submitted feedback and uploaded documents
 
-```
-![User Profile](screenshots/profile.png)
-```
-
+![User Profile](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/profile.png)
 
 ### 📊 Dashboard (Role-Based)
 
 * Government employee dashboard for managing content
 * Admin dashboard for verification and system control
 
-```
-![Dashboard](screenshots/dashboard.png)
-```
-
 ### ➕ Add Projects & Upload Documents
 
 * Forms for adding new projects, innovations, researches, and milestones
 * Document upload with **pending verification** status
 
-```
-![Add Project](screenshots/add_project.png)
-![Upload Document](screenshots/upload_document.png)
-```
+1. Document View
+![Upload Document](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/document_view.png)
+2. Adding document
+![Upload Document](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/add_document.png)
+3. Admin-- documents(pending/approved)
+![Upload Document](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/document.png)
 
----
+### Search & Filter🔍
+![Upload Document](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/search.png)
+
+### Notifications bar
+![Upload Document](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/notifications1.png)
+![Upload Document](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/notifications11.png)
 
 ## 🎓 Academic Information
 
