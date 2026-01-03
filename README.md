@@ -136,28 +136,29 @@ https://github.com/user-attachments/assets/7084eb3f-baea-4c39-af9f-b82d18b774a7
 * Displays featured projects, innovations, researches, and milestones
 * Highlights different **sectors** and current project statuses
 
-```
-![Index Page](scree![Uploading notifications.png…]()
-nshots/index.png)
-```
+https://github.com/user-attachments/assets/8591b09d-298e-4ac3-9c43-8b9e6c458c22
+
 
 ### 📋 Project Listing & View Page
 
 * Detailed view of individual projects
 * Shows description, sector, timeline, and status (Ongoing / Active / Completed / Cancelled)
 
-```
-![Project View](screenshots/project_view.png)
-```
-
+1. Index(All projects)
+![Alt text](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/project_index.png)
+2. View page(a specific project)
+![image alt](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/view1.png)
+![image alt](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/view_2.png)
+3. Adding a project
+![image alt](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/add_project1.png)
+![image alt](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/add_project2.png)
 ### 📰 News & Announcements
 
 * Separate section for official news and updates
 * Managed by government employees and admins
 
-```
 ![News Page](screenshots/news.png)
-```
+
 
 ### 🏢 Sector-wise Categorization
 
@@ -177,15 +178,6 @@ nshots/index.png)
 ![User Profile](screenshots/profile.png)
 ```
 
-### 🔐 Authentication Flow (Login / Signup)
-
-* Secure login and registration system
-* Role-based access control (User / Govt Employee / Admin)
-
-```
-![Login](screenshots/login.png)
-![Signup](screenshots/signup.png)
-```
 
 ### 📊 Dashboard (Role-Based)
 
