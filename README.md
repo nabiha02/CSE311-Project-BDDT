@@ -144,13 +144,14 @@ https://github.com/user-attachments/assets/8591b09d-298e-4ac3-9c43-8b9e6c458c22
 * Detailed view of individual projects
 * Shows description, sector, timeline, and status (Ongoing / Active / Completed / Cancelled)
 
-
+1. Index(All projects)
 ![Alt text](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/project_index.png)
-
+2. View page(a specific project)
 ![image alt](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/view1.png)
-
-https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/view_2.png
-
+![image alt](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/view_2.png)
+3. Adding a project
+![image alt](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/add_project1.png)
+![image alt](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/add_project2.png)
 ### 📰 News & Announcements
 
 * Separate section for official news and updates
