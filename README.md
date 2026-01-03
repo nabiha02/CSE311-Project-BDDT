@@ -147,8 +147,9 @@ https://github.com/user-attachments/assets/8591b09d-298e-4ac3-9c43-8b9e6c458c22
 
 ![Alt text](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/project_index.png)
 
-![image alt](screenshots/view2.png)
+![image alt](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/view1.png)
 
+https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/view_2.png
 
 ### 📰 News & Announcements
 
