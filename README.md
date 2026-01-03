@@ -138,7 +138,7 @@ https://github.com/user-attachments/assets/7084eb3f-baea-4c39-af9f-b82d18b774a7
 
 ```
 <img width="1607" height="872" alt="index" src="https://github.com/user-attachments/assets/29e5429a-3e6d-4e25-b7b9-7d3af843b0d7" />
-https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/index.png
+
 ```
 
 ### 📋 Project Listing & View Page
@@ -147,7 +147,7 @@ https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/index.png
 * Shows description, sector, timeline, and status (Ongoing / Active / Completed / Cancelled)
 
 ```
-![Alt text](https://raw.githubusercontent.com/nabiha02/CSE311-Project-BDDT/main/screenshots/view_2.png)
+![Alt text](https://github.com/nabiha02/CSE311-Project-BDDT/blob/main/screenshots/index.png)
 
 ![image alt](screenshots/view2.png)
 ```
