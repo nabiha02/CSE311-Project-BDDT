@@ -63,8 +63,8 @@
 ```
 Public User
    │
-   │ View Projects / Innovations / Researches / Milestones
-   │ Filter by Status (Ongoing | Active | Completed | Cancelled)
+   │ View details of Projects / Innovations / Researches / Milestones
+   │ Filter by Status (Ongoing | Active | Completed | Cancelled), Investors, District, Upzilla, Start Date, Targetted Date
    │
    ├──► Submit Feedback ───────────────┐
    │                                   │
